@@ -1047,11 +1047,13 @@ with center:
             <p style="font-family:'Rajdhani',sans-serif; font-size:15px; color:#e6edf3;
                       margin: -4px 0 12px 0; line-height:1.75;">
                 Accurate delivery estimates keep customers informed and dispatch operations running smoothly.
-                Instead of relying on static distance rules or rough guesswork, this tool uses an
-                <strong style="color:#e0c070;">Optimized Random Forest</strong> machine learning model to predict
-                end-to-end delivery time in minutes — accounting for <strong style="color:#2dd4bf;">road distance,
-                kitchen preparation time, live weather, traffic congestion, time of day, vehicle type, and courier
-                experience</strong>.
+                While major platforms like <strong style="color:#e0c070;">Zomato and Swiggy</strong> rely on
+                enterprise-grade logistics software, <strong style="color:#2dd4bf;">local cafes, restaurants, cloud
+                kitchens, and neighborhood vendors</strong> rarely have access to expensive predictive tools.
+                Powered by an <strong style="color:#e0c070;">Optimized Random Forest</strong> model, this application
+                gives any business data-driven ETA predictions — accounting for <strong style="color:#2dd4bf;">road
+                distance, kitchen preparation time, live weather, traffic congestion, time of day, vehicle type, and
+                courier experience</strong>.
             </p>
             """, unsafe_allow_html=True)
 
@@ -1065,6 +1067,75 @@ with center:
                 kpi_card("🎛️", "Two Modes", "Demo + Custom", "Pre-trained or your CSV")
             with h4:
                 kpi_card("🧪", "Built-In EDA", "Auto Report", "Visual quality & insights")
+
+            st.divider()
+
+            # ── Real-World Business Use Case ───────────────
+            section_heading("🏪", "Built for Local Cafes, Restaurants & Small Vendors")
+            st.markdown("""
+            <p style="font-family:'Rajdhani',sans-serif; font-size:14px; color:#8b949e;
+                      margin: -6px 0 14px 0; line-height:1.6;">
+                Why we built <strong style="color:#2dd4bf;">Try With Your Own Dataset</strong> — turning everyday order logs into confident customer quotes.
+            </p>
+            """, unsafe_allow_html=True)
+
+            u1, u2 = st.columns(2)
+            with u1:
+                st.markdown("""
+                <div style="
+                    background: #1c2330;
+                    border: 1px solid #2a3444;
+                    border-left: 3px solid #c9a84c;
+                    border-radius: 0 10px 10px 0;
+                    padding: 18px 20px;
+                    height: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                ">
+                    <p style="font-family:'Rajdhani',sans-serif; font-weight:700;
+                              font-size:17px; color:#e0c070; margin:0 0 8px 0;">
+                        📋 Collect 15–30 Days of Orders &amp; Train Free
+                    </p>
+                    <p style="font-family:'Rajdhani',sans-serif; font-size:14px;
+                              color:#e6edf3; margin:0; line-height:1.65;">
+                        Small cafes and local shopkeepers don't need paid dispatch software to forecast delivery times.
+                        Download the free CSV template, record deliveries step-by-step — an active cafe can gather
+                        enough order history in just <strong style="color:#e0c070;">15 to 30 days</strong> — and upload
+                        it to train a private model tailored to your own kitchen speed, couriers, and local roads.
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+
+            with u2:
+                st.markdown("""
+                <div style="
+                    background: #1c2330;
+                    border: 1px solid #2a3444;
+                    border-left: 3px solid #2dd4bf;
+                    border-radius: 0 10px 10px 0;
+                    padding: 18px 20px;
+                    height: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                ">
+                    <p style="font-family:'Rajdhani',sans-serif; font-weight:700;
+                              font-size:17px; color:#2dd4bf; margin:0 0 8px 0;">
+                        📞 Real-Life Phone Order Scenario
+                    </p>
+                    <p style="font-family:'Rajdhani',sans-serif; font-size:14px;
+                              color:#e6edf3; margin:0; line-height:1.65;">
+                        Imagine a customer calls to order food and asks: <em>"How long will it take? I have other tasks to run."</em>
+                        Even an inexperienced staff member won't draw a blank — simply select live <strong style="color:#2dd4bf;">traffic,
+                        time of day, weather, distance, prep time, and rider experience</strong>. If the model predicts
+                        <strong style="color:#e0c070;">30 min</strong> (with ~3–5 min average error), staff can confidently quote
+                        <strong style="color:#e0c070;">"around 30 minutes"</strong> or <strong style="color:#e0c070;">"30 to 35 minutes"</strong>.
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
 
             st.divider()
 
