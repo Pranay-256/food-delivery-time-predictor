@@ -1047,8 +1047,8 @@ with center:
             <p style="font-family:'Rajdhani',sans-serif; font-size:15px; color:#e6edf3;
                       margin: -4px 0 12px 0; line-height:1.75;">
                 Accurate delivery estimates keep customers informed and dispatch operations running smoothly.
-                While major platforms like <strong style="color:#e0c070;">Zomato and Swiggy</strong> rely on
-                enterprise-grade logistics software, <strong style="color:#2dd4bf;">local cafes, restaurants, cloud
+                While major platforms like <strong style="color:#e0c070;">Uber Eats, Zomato and Swiggy</strong> rely on
+                enterprise-grade logistics software developed and managed by large teams, <strong style="color:#2dd4bf;">local cafes, restaurants, cloud
                 kitchens, and neighborhood vendors</strong> rarely have access to expensive predictive tools.
                 Powered by an <strong style="color:#e0c070;">Optimized Random Forest</strong> model, this application
                 gives any business data-driven ETA predictions — accounting for <strong style="color:#2dd4bf;">road
