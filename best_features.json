@@ -1,0 +1,103 @@
+{
+  "best_features": [
+    "Distance_km",
+    "Weather",
+    "Traffic_Level",
+    "Preparation_Time_min"
+  ],
+  "all_features": [
+    "Distance_km",
+    "Weather",
+    "Traffic_Level",
+    "Time_of_Day",
+    "Vehicle_Type",
+    "Preparation_Time_min",
+    "Courier_Experience_yrs"
+  ],
+  "criteria": {
+    "alpha": 0.05
+  },
+  "selection_table": [
+    {
+      "Feature": "Distance_km",
+      "Type": "Numeric",
+      "Test": "Pearson correlation",
+      "Statistic": 0.8447049342298651,
+      "p-value": 3.635678069898953e-273,
+      "Selected": true,
+      "Why": "Significant (p < 0.0001)"
+    },
+    {
+      "Feature": "Weather",
+      "Type": "Categorical",
+      "Test": "One-Way ANOVA",
+      "Statistic": 10.473411693358608,
+      "p-value": 2.5912205323270207e-08,
+      "Selected": true,
+      "Why": "Significant (p < 0.0001)"
+    },
+    {
+      "Feature": "Traffic_Level",
+      "Type": "Categorical",
+      "Test": "One-Way ANOVA",
+      "Statistic": 61.976528839996796,
+      "p-value": 4.2678050908057586e-26,
+      "Selected": true,
+      "Why": "Significant (p < 0.0001)"
+    },
+    {
+      "Feature": "Time_of_Day",
+      "Type": "Categorical",
+      "Test": "One-Way ANOVA",
+      "Statistic": 0.15135300953668607,
+      "p-value": 0.9288354579964331,
+      "Selected": false,
+      "Why": "Not statistically significant (p = 0.93)"
+    },
+    {
+      "Feature": "Vehicle_Type",
+      "Type": "Categorical",
+      "Test": "One-Way ANOVA",
+      "Statistic": 0.3397269975876759,
+      "p-value": 0.7120470498971402,
+      "Selected": false,
+      "Why": "Not statistically significant (p = 0.71)"
+    },
+    {
+      "Feature": "Preparation_Time_min",
+      "Type": "Numeric",
+      "Test": "Pearson correlation",
+      "Statistic": 0.283938180816543,
+      "p-value": 5.3461875776348515e-20,
+      "Selected": true,
+      "Why": "Significant (p < 0.0001)"
+    },
+    {
+      "Feature": "Courier_Experience_yrs",
+      "Type": "Numeric",
+      "Test": "Pearson correlation",
+      "Statistic": -0.043704445217752026,
+      "p-value": 0.16728289179971656,
+      "Selected": false,
+      "Why": "Not statistically significant (p = 0.17)"
+    }
+  ],
+  "metrics_best": {
+    "MAE": 3.5606500000000008,
+    "MSE": 21.785601500000002,
+    "RMSE": 4.667504847346171,
+    "R2": 0.9566284773218341
+  },
+  "metrics_all": {
+    "MAE": 3.7169500000000006,
+    "MSE": 24.667064500000006,
+    "RMSE": 4.966594859659886,
+    "R2": 0.9508919619517722
+  },
+  "importances_best": {
+    "Distance_km": 74.61719820158541,
+    "Traffic_Level": 13.682497964204336,
+    "Preparation_Time_min": 9.457946757926166,
+    "Weather": 2.2423570762840894
+  }
+}
